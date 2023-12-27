@@ -1,0 +1,125 @@
+@import url(https://db.onlinewebfonts.com/c/08e020de1811ec4489f82d1247a42c09?family=Helvetica+Now+Text);
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Helvetica Now Text" ;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 30px;
+}
+nav {
+   position: fixed;
+    background-color:#020202 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #282828;
+    transition: top 1s;
+}
+
+.box-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90% ;
+}
+
+.box-list-links{
+    position: relative;
+    left: 80px;
+}
+
+.box-list-links ul{
+    display: flex;
+    
+}
+
+.box-list-links ul li{
+    padding: 0% 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    transition: all 1s;
+    position: relative;
+}
+
+.box-list-links ul li::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: transparent; /* Inicialmente transparente para ocultar a linha */
+    position: absolute;
+    bottom: 0;
+    transition: background-color 0.4s; /* Adiciona a transição de 1 segundo para a propriedade background-color */
+}
+
+
+.box-list-links ul li:hover::before {
+    background-color: #e8e8e8; /* Cor da linha no hover */
+}
+
+
+.box-addition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.btn-obter-launcher{
+    display: block;
+    background-color:#FCAF17 ;
+    font-size: 15px;
+    color: #020202;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.img-pesquisa{
+    width: 25px;
+}
+
+.user-img{
+    width: 30px;
+}
+
+
+.box-list-links ul li a{
+    color: #e8e8e8;
+}
+
+
+.box{
+    height: 200vh;
+}
+
+
+
+/*classes nabar*/
+
+.up-scroll{
+    top: 0;
+}
+
+.down-scroll{
+    top: -80px;
+}
